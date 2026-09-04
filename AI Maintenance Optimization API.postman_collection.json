@@ -1,0 +1,142 @@
+{
+  "info": {
+    "_postman_id": "d4f48482-1ecf-44a9-97f9-064a2715d7a0",
+    "name": "AI Maintenance Optimization API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57974469",
+    "_collection_link": "https://go.postman.co/collection/57974469-d4f48482-1ecf-44a9-97f9-064a2715d7a0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Model Metrics",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/model/metrics",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "model",
+            "metrics"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Machine Failure Prediction",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"temperature\": 70,\r\n    \"vibration\": 0.5,\r\n    \"pressure\": 7,\r\n    \"humidity\": 50,\r\n    \"rotation_speed\": 1500,\r\n    \"voltage\": 220,\r\n    \"current\": 10,\r\n    \"oil_level\": 70,\r\n    \"load\": 50,\r\n    \"motor_temperature\": 75,\r\n    \"gearbox_temperature\": 65,\r\n    \"sound_level\": 70,\r\n    \"fan_speed\": 1200,\r\n    \"reactive_power\": 2,\r\n    \"active_power\": 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/predict",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "predict"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Maintenance Recommendation",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"temperature\": 70,\r\n    \"vibration\": 0.5,\r\n    \"pressure\": 7,\r\n    \"humidity\": 50,\r\n    \"rotation_speed\": 1500,\r\n    \"voltage\": 220,\r\n    \"current\": 10,\r\n    \"oil_level\": 70,\r\n    \"load\": 50,\r\n    \"motor_temperature\": 75,\r\n    \"gearbox_temperature\": 65,\r\n    \"sound_level\": 70,\r\n    \"fan_speed\": 1200,\r\n    \"reactive_power\": 2,\r\n    \"active_power\": 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/maintenance/recommendation",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "maintenance",
+            "recommendation"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Data Summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/data/summary",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "data",
+            "summary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "GET http://127.0.0.1:8000/health",
+          "protocol": "GET http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
